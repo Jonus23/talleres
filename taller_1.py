@@ -46,9 +46,35 @@ os.system('pause')
 {'Euro':'€', 'Dollar':'$', 'Yen':'¥'} Luego pregunte al usuario por una divisa y el valor en pesos a convertir. Luego muestre en consola el 
 símbolo con el valor que corresponde a la divisa o un mensaje de advertencia si esa divisa no se encuentra en el diccionario.
 '''
+os.system('cls')
+
 valores = {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
 
+euro = 5000
+dolar= 4000
+yen= 3000
 
+
+print('pasar de pesos a...')
+print('1. euro')
+print('2. dolar')
+print('3. yen')
+print()
+
+pasar= float(input('pesos colobianos que desea pasar: '))
+divis= int(input('elija la divisa: '))
+
+if divis == 1:
+    res= pasar / euro
+    print(valores['Euro'], res)
+elif divis == 2:
+    res = pasar / dolar
+    print(valores['Dollar'], res)
+elif divis == 3:
+    res = pasar / yen
+    print(valores['Yen'], res)
+    
+os.system('pause')
 
 
 '''
